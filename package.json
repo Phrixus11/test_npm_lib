@@ -1,11 +1,18 @@
 {
-  "name": "start-storybook-npm-lib",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@phrixus/test-npm-lib",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "dist/style.css"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "storybook dev -p 6006",
+    "build": "vite build && tsc",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
