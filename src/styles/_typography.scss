@@ -1,22 +1,35 @@
-:root {
-  /* globals */
-  --font-family: system-ui, sans-serif;
+$font-family: 'Inter', sans-serif;
 
-  /* font-sizes */
-  --font-size-xs: 12px;
-  --font-size-s: 14px;
-  --font-size-m: 16px;
-  --font-size-l: 18px;
-  --font-size-xl: 20px;
-  --font-size-xxl: 22px;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
 
-  /* line-heights */
-  --line-height-m: 24px;
-  --line-height-xl: 36px;
+@mixin h1 {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
+}
 
-  /* font-weights */
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semi-bold: 600;
-  --font-weight-bold: 700;
+@mixin h3 {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@mixin regular_text_14 {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+}
+
+@mixin regular_text_16 {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
 }
