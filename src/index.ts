@@ -1,3 +1,2 @@
+import './styles/index.scss'
 export * from './components'
-import './styles/_boilerplate.css'
-import './styles/_typography.css'
